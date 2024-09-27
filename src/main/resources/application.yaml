@@ -1,0 +1,20 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: LogbookPrettyJsonIssue
+
+logbook:
+  obfuscate:
+    json-body-fields:
+      - number
+  format:
+    style: http
+  logger:
+    name: REST
+    level: info
+  filter:
+    enabled: true
+  secure-filter:
+    enabled: false
